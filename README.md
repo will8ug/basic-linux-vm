@@ -10,8 +10,3 @@ terraform apply
 terraform destroy
 
 ```
-
-## TODO
-- use random
-- size & sku
-- outputs.tf
