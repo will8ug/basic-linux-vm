@@ -37,3 +37,6 @@ terraform.rc
 .idea/
 *.iml
 .vscode/
+
+# just local test files
+/pub_key

@@ -33,7 +33,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   name                = "${var.prefix}-vm"
   resource_group_name = azurerm_resource_group.main.name
   location            = azurerm_resource_group.main.location
-  size                = "B2s"
+  size                = "Standard_B2s"
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.main.id
@@ -41,7 +41,7 @@ resource "azurerm_linux_virtual_machine" "main" {
 
   admin_ssh_key {
     username   = "adminuser"
-    public_key = file("~/.ssh/id_rsa.pub")
+    public_key = file("./pub_key")
   }
 
   source_image_reference {
