@@ -7,6 +7,8 @@ Relevant commands of this repository:
 terraform init
 terraform apply
 
+terraform destroy
+
 ```
 
 ## TODO
