@@ -9,3 +9,9 @@ variable "location" {
   default     = "koreacentral"
   description = "The Azure Region in which all resources in this test should be created."
 }
+
+variable "create_bastion" {
+  type        = bool
+  default     = false
+  description = "Whether or not to create Bastion as well. Default to false."
+}

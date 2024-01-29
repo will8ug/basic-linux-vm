@@ -11,5 +11,6 @@ terraform destroy
 
 ##########
 terraform apply -var='location=westus'
+terraform apply -var='create_bastion=true' -var='location=eastasia'
 
 ```
