@@ -9,4 +9,7 @@ terraform apply
 
 terraform destroy
 
+##########
+terraform apply -var='location=westus'
+
 ```
